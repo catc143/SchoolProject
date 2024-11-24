@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>TUP-TAGUIG</title>
+  <meta name="title" content="TUP-TAGUIG - The Best Program to Enroll for Exchange">
+ 
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/tup-logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/school.jfif">
+  <link rel="preload" as="image" href="./assets/images/tup-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+<style>
+
+body {
+    background: linear-gradient(to bottom, darkred, white);
+    min-height: 100vh;
+    margin: 0;
+}
+    .facility-card {
+    text-align: center;
+    margin: 20px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-icon {
+    margin-bottom: 20px;
+  }
+
+  .img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .img-hover:hover {
+    transform: scale(1.1);
+  }
+
+  .card-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: var(--color);
+    color: white;
+    border-radius: 50px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .card-title:hover {
+    color: var(--color);
+  }
+
+  .card-text {
+    margin-top: 10px;
+  }
+
+  .card-text a {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .card-text a:hover {
+    color: var(--color);
+  }
+
+  
+</style>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tup-logo.png" width="60" height="20" alt="tup logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="tup logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="admission.html" class="navbar-link" data-nav-link>Admission</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contacts.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+    
+
+        <a href="https://ers.tup.edu.ph/aims/applicants/" class="btn has-before">
+          <span class="span">Apply now!</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Kickstart Your Global Journey in<span class="span">TUP-TAGUIG</span>
+            </h1>
+            
+            <p class="hero-text">
+              Join a transformative experience where opportunities meet innovation, and learning knows no boundaries.
+            </p>
+            
+
+            <a href="#" class="btn has-before">
+              <span class="span">Find courses</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/proff.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/itbldg.png" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+            <img src="./assets/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1">
+
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section contact " id="contact" aria-label="contact">
+        <div class="container">
+          <p class="section-subtitle" style="color: black;">Contact Us</p>
+      
+          <h2 class="h2 section-title">
+            Get in Touch with Our <span class="span">Facilities</span>
+          </h2>
+      
+          <p class="section-text" style="color: black;">
+            We are here to assist you. Explore our facilities and reach out to us for any inquiries or information regarding our services and programs.
+          </p>
+      
+          <ul class="grid-list">
+            <!-- Facility 1 -->
+            <li>
+              <div class="facility-card" style="--color: 170, 75%, 41%">
+                <div class="card-icon">
+                  <img src="./assets/images/1-1.jpg" width="200" height="200" loading="lazy" alt="Facility 1" class="img img-hover">
+                </div>
+      
+                <h3 class="h3">
+                  <a href="#" class="card-title">Engineering Lab</a>
+                </h3>
+                
+                <p class="card-text">
+                  <a href="mailto:engineering@university.com"><i class="fas fa-envelope"></i> Email Us</a>
+                  <a href="tel:+123456789"><i class="fas fa-phone"></i> Call Us</a>
+                </p>
+                
+                <span class="card-badge">Advanced Equipment</span>
+              </div>
+            </li>
+      
+            <!-- Facility 2 -->
+            <li>
+              <div class="facility-card" style="--color: 351, 83%, 61%">
+                <div class="card-icon">
+                  <img src="./assets/images/1-2.jpg" width="200" height="200" loading="lazy" alt="Facility 2" class="img img-hover">
+                </div>
+      
+                <h3 class="h3">
+                  <a href="#" class="card-title">Robotics Workshop</a>
+                </h3>
+                
+                <p class="card-text">
+                  <a href="mailto:robotics@university.com"><i class="fas fa-envelope"></i> Email Us</a>
+                  <a href="tel:+987654321"><i class="fas fa-phone"></i> Call Us</a>
+                </p>
+      
+                <span class="card-badge">Hands-On Experience</span>
+              </div>
+            </li>
+      
+            <!-- Facility 3 -->
+            <li>
+              <div class="facility-card" style="--color: 229, 75%, 58%">
+                <div class="card-icon">
+                  <img src="./assets/images/1-3.jpg" width="200" height="200" loading="lazy" alt="Facility 3" class="img img-hover">
+                </div>
+      
+                <h3 class="h3">
+                  <a href="#" class="card-title">Mechatronics Lab</a>
+                </h3>
+                
+                <p class="card-text">
+                  <a href="mailto:mechatronics@university.com"><i class="fas fa-envelope"></i> Email Us</a>
+                  <a href="tel:+123987654"><i class="fas fa-phone"></i> Call Us</a>
+                </p>
+      
+                <span class="card-badge">Innovative Technology</span>
+              </div>
+            </li>
+      
+            <!-- Facility 4 -->
+            <li>
+              <div class="facility-card" style="--color: 42, 94%, 55%">
+                <div class="card-icon">
+                  <img src="./assets/images/1-4.jpg" width="200" height="200" loading="lazy" alt="Facility 4" class="img img-hover">
+                </div>
+      
+                <h3 class="h3">
+                  <a href="#" class="card-title">Automation Systems Center</a>
+                </h3>
+                
+                <p class="card-text">
+                  <a href="mailto:automation@university.com"><i class="fas fa-envelope"></i> Email Us</a>
+                  <a href="tel:+1122334455"><i class="fas fa-phone"></i> Call Us</a>
+                </p>
+      
+                <span class="card-badge">Cutting-Edge Systems</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+      </section>
+
+      <section class="section map" id="map" aria-label="map">
+        <div class="container">
+            <h2 class="h2 section-title">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15450.264180522561!2d121.0346429!3d14.5095836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf00664007db%3A0x7785013f15f7f45e!2sTechnological%20University%20of%20the%20Philippines%20-%20Taguig%20Campus!5e0!3m2!1sen!2sph!4v1732426167405!5m2!1sen!2sph" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#footer" class="logo">
+              <img src="./assets/images/tup-logo.png" width="162" height="50" alt="TUP-TAGUIG logo">
+            </a>
+            <p class="footer-brand-text">
+              The Vision of TUP Taguig is to provide quality education that fosters innovation, creativity, and academic excellence, empowering students to contribute effectively to society and the global community.
+            </p>
+    
+            <div class="wrapper">
+              <span class="span">Add:</span>
+              <address class="address">G25P+828, Taguig, 1630 Metro Manila</address>
+            </div>
+    
+            <div class="wrapper">
+              <span class="span">Call:</span>
+              <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+            </div>
+    
+            <div class="wrapper">
+              <span class="span">Email:</span>
+              <a href="mailto:info@tuptauig.com" class="footer-link">tuptaguig@gmail.com</a>
+            </div>
+          </div>
+    
+          <ul class="footer-list">
+            <li><p class="footer-list-title">Online Platform</p></li>
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Courses</a></li>
+            <li><a href="#" class="footer-link">Instructor</a></li>
+            <li><a href="#" class="footer-link">Events</a></li>
+          </ul>
+    
+          <ul class="footer-list">
+            <li><p class="footer-list-title">Links</p></li>
+            <li><a href="#footer" class="footer-link">Contact Us</a></li>
+            <li><a href="#" class="footer-link">Gallery</a></li>
+            <li><a href="#" class="footer-link">News & Articles</a></li>
+            <li><a href="#" class="footer-link">FAQ's</a></li>
+            <li><a href="https://ers.tup.edu.ph/aims/students/" class="footer-link">Sign In/Registration</a></li>
+            <li><a href="https://www.tupt.edu.ph/" class="footer-link">Coming Soon</a></li>
+          </ul>
+    
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter subscription
+            </p>
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+            <ul class="social-list">
+              <li><a href="https://www.facebook.com/tuptaguigofficial" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="https://www.linkedin.com/school/technological-university-of-the-philippines/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              <li><a href="https://www.instagram.com/explore/locations/269052856/tup-taguig-campus/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="https://twitter.com/tuptaguig?lang=en" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="https://m.youtube.com/hashtag/tuptaguig" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+     
+    
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">Rean Joy Cicat</a>
+          </p>
+        </div>
+      </div>
+    
+    </footer>
+    
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
