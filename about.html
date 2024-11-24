@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+     <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/tup-logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/school.jfif">
+  <link rel="preload" as="image" href="./assets/images/tup-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+    <title>About TUP-Taguig</title>
+   
+</head>
+
+
+    <style>
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+     /* Background Image */
+     background: url("./assets/images/1.jpg") no-repeat center center/cover;
+
+      /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay;
+}
+
+
+
+
+main {
+    /* Ensure no gaps between header and footer */
+    margin: 0;
+    padding: 0;
+    
+    color: #fff; 
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); 
+
+   
+    
+   
+
+
+  
+}
+
+
+main h2,
+main p,
+main ul {
+    position: relative;
+    z-index: 2; 
+}
+
+/* Headings */
+main h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
+    padding-bottom: 8px;
+}
+
+/* Paragraphs */
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mission-vision div {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #990000; /* Text in TUP red */
+    border-radius: 8px;
+}
+
+/* Core Values List */
+main ul p {
+    text-align: center;
+background-color: rgba(255, 255, 255, 0.7);
+padding: 20px;
+border-radius: 8px;
+color: #990000;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+width: 600px; /* Adjust this value to your desired width */
+margin: 0 auto; /* Centers the element horizontally */
+
+}
+
+/* Contact Us Section */
+.content-section h2 + p {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    color: #990000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+<body id="top">
+     <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tup-logo.png" width="60" height="20" alt="tup logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="tup logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="admission.html" class="navbar-link" data-nav-link>Admission</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contacts.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+    
+
+        <a href="https://ers.tup.edu.ph/aims/applicants/" class="btn has-before">
+          <span class="span">Apply now!</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+      <!-- MAIN CONTENT -->
+      <main style="margin-top: 100px;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Our History</h2>
+                <p>
+                    The Technological University of the Philippines (TUP) was established in 1901 as the Manila Trade School, 
+                    aiming to train youth in practical arts. Over the years, it evolved into a university offering a wide range 
+                    of technical, engineering, and industrial programs. TUP is a pioneer in technological education in the Philippines.
+                </p>
+            </div>
+            <div class="content-section">
+                <h2>Mission and Vision</h2>
+                <div class="mission-vision">
+                    <div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To provide higher and advanced education in technological and engineering fields. TUP strives to produce 
+                            globally competitive graduates who contribute to nation-building and the advancement of technology.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            TUP envisions itself as a premier state university with recognized excellence in engineering, technology, 
+                            and applied sciences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <h2>Core Values</h2>
+                <ul>
+                    <p>Commitment to Excellence <br>
+                    Innovative Thinking <br>
+                    Integrity and Transparency <br>
+                    Responsiveness to Society</p>
+                </ul>
+            </div>
+            <div class="content-section">
+                <h2>Contact Us</h2>
+                <p>
+                    Address: Ayala Blvd, Ermita, Manila, 1000 Metro Manila, Philippines<br>
+                    Email: info@tup.edu.ph<br>
+                    Phone: (02) 1234-5678
+                </p>
+            </div>
+        </div>
+    </main>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#footer" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="TUP-TAGUIG logo">
+          </a>
+
+          <p class="footer-brand-text">
+            The Vision of TUP Taguig is to provide quality education that fosters innovation, creativity, and academic excellence, empowering students to contribute effectively to society and the global community.
+        </p>
+        
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">G25P+828, Taguig, 1630 Metro Manila</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@tuptauig.com" class="footer-link">tuptaguig@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+        
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="https://ers.tup.edu.ph/aims/students/" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="https://www.tupt.edu.ph/" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/tuptaguigofficial" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/school/technological-university-of-the-philippines/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/explore/locations/269052856/tup-taguig-campus/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/tuptaguig?lang=en" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://m.youtube.com/hashtag/tuptaguig" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">Rean Joy Cicat</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

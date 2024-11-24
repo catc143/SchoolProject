@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+     <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/tup-logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/school.jfif">
+  <link rel="preload" as="image" href="./assets/images/tup-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+    <title>Courses TUP-Taguig</title>
+   
+</head>
+<style>
+
+
+body {
+
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #f00, #fff);
+    color: white;
+    height: 100vh;
+}
+
+.main .left {
+    flex: 1;
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.main .btn {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main .btn:hover {
+    background-color: #c0392b;
+}
+
+.main .right {
+    flex: 1;
+}
+
+.main .right img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+/* Key Features Section */
+.sec {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sec .heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.sec .para {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.boxes {
+    background-color: #f9f9f9;
+    padding: 30px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.boxes:hover {
+    transform: translateY(-10px);
+}
+
+.boxes i {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.sub_heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.para_1 {
+    font-size: 1rem;
+    color: #777;
+}
+
+</style>
+
+<body id="top">
+    <!-- 
+   - #HEADER
+ -->
+
+ <header class="header" data-header>
+   <div class="container">
+
+     <a href="index.html" class="logo">
+       <img src="./assets/images/tup-logo.png" width="60" height="20" alt="tup logo">
+     </a>
+
+     <nav class="navbar" data-navbar>
+
+       <div class="wrapper">
+         <a href="#" class="logo">
+           <img src="./assets/images/tup-logo.png" width="162" height="50" alt="tup logo">
+         </a>
+
+         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+         </button>
+       </div>
+
+       <ul class="navbar-list">
+
+         <li class="navbar-item">
+           <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+         </li>
+
+         <li class="navbar-item">
+           <a href="about.html" class="navbar-link" data-nav-link>About</a>
+         </li>
+
+         <li class="navbar-item">
+           <a href="courses.html" class="navbar-link" data-nav-link>Courses</a>
+         </li>
+
+         <li class="navbar-item">
+           <a href="admission.html" class="navbar-link" data-nav-link>Admission</a>
+         </li>
+
+         <li class="navbar-item">
+           <a href="index.html" class="navbar-link" data-nav-link>Contact</a>
+         </li>
+
+       </ul>
+
+     </nav>
+
+     <div class="header-actions">
+
+       <button class="header-action-btn" aria-label="toggle search" title="Search">
+         <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+       </button>
+
+
+   
+
+       <a href="https://ers.tup.edu.ph/aims/applicants/" class="btn has-before">
+         <span class="span">Apply now!</span>
+
+         <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+       </a>
+
+       <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+       </button>
+
+     </div>
+
+     <div class="overlay" data-nav-toggler data-overlay></div>
+
+   </div>
+ </header>
+ <section class="main">
+  <div class="left">
+      <h3>Your Future Begins Here</h3>
+      <h1>Unlock Your Potential with Electrical Engineering</h1>
+  </div>
+  <div class="right">
+      <img src="./assets/images/elec.png" alt="Electrical Engineering Image">
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <h1 class="heading">Key Features of Our Electrical Engineering Courses</h1>
+  <p class="para">Explore the dynamic world of electrical engineering. Our courses integrate theoretical knowledge with practical experience to prepare you for a thriving career in the field of electrical systems, circuits, and electronics.</p>
+
+  <div class="box">
+      <div class="boxes">
+          <i class="ri-team-line"></i>
+          <h2 class="sub_heading">Expert Faculty</h2>
+          <p class="para_1">Our faculty includes skilled professionals and experienced engineers who provide real-world insights into electrical systems, circuit design, power generation, and renewable energy technologies. You'll gain knowledge from the leading experts in the field.</p>
+      </div>
+      <div class="boxes">
+          <i class="ri-tools-line"></i>
+          <h2 class="sub_heading">State-of-the-Art Labs</h2>
+          <p class="para_1">We offer cutting-edge labs equipped with advanced electrical components and equipment. Hands-on training in circuits, electrical systems, and robotics will prepare you for the challenges of the electrical engineering industry.</p>
+      </div>
+      <div class="boxes">
+          <i class="ri-medal-line"></i>
+          <h2 class="sub_heading">Quality Education</h2>
+          <p class="para_1">Our curriculum covers a wide range of electrical engineering topics, including power systems, digital electronics, microcontrollers, and control systems. We provide the academic foundation and practical experience to help you thrive in a fast-paced, technology-driven world.</p>
+      </div>
+  </div>
+</section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#footer" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="TUP-TAGUIG logo">
+          </a>
+
+          <p class="footer-brand-text">
+            The Vision of TUP Taguig is to provide quality education that fosters innovation, creativity, and academic excellence, empowering students to contribute effectively to society and the global community.
+        </p>
+        
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">G25P+828, Taguig, 1630 Metro Manila</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@tuptauig.com" class="footer-link">tuptaguig@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#category" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#courses" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Events</a>
+          </li>
+
+        
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="https://ers.tup.edu.ph/aims/students/" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="https://www.tupt.edu.ph/" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/tuptaguigofficial" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/school/technological-university-of-the-philippines/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/explore/locations/269052856/tup-taguig-campus/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/tuptaguig?lang=en" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://m.youtube.com/hashtag/tuptaguig" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">Rean Joy Cicat</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

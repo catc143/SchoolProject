@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>TUP-TAGUIG</title>
+  <meta name="title" content="TUP-TAGUIG - The Best Program to Enroll for Exchange">
+ 
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/tup-logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/school.jfif">
+  <link rel="preload" as="image" href="./assets/images/tup-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+<style>
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes slideInFromLeft {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+
+    body {
+        background: linear-gradient(to bottom, white, red);
+        background-size: 400% 400%;
+        animation: gradientShift 10s ease infinite;
+        color: #1b0808; /* Set text color to white */
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .content-box {
+        background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h3, h4, h5 {
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Increased text shadow for better contrast */
+    }
+
+  
+    a:hover {
+        color: #c0392b; /* Darker red on hover */
+    }
+
+    .alert-warning {
+        background-color: #f39c12;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tup-logo.png" width="60" height="20" alt="tup logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="tup logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="admission.html" class="navbar-link" data-nav-link>Admission</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contacts.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+    
+
+        <a href="https://ers.tup.edu.ph/aims/applicants/" class="btn has-before">
+          <span class="span">Apply now!</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+        <main style="margin-top: 150px; margin-bottom: 20px;">
+            <div class="container">
+                <div class="content-section">
+                    <div class="content-box" style="background: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 10px;">
+                        <h1 class="text-center" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 20px; animation: fadeIn 2s ease-out;">
+                            Application for Admission for SY 2024-2025
+                        </h1>
+                        <p class="text-center" style="font-size: 1.1rem; color: #333; margin-bottom: 40px; animation: fadeIn 2.5s ease-out;">
+                            The Technological University of the Philippines - Taguig is now accepting applications for the upcoming school year. Please follow the steps below to complete your application process.
+                        </p>
+        
+                        <h3 style="font-size: 1.8rem; color: #c0392b; animation: slideInFromLeft 2s;">
+                            Procedures for Online Application
+                        </h3>
+                        <p style="font-size: 1.1rem; color: #333;">It is recommended that the applicant use a laptop or desktop computer for online applications.</p>
+        
+                        <h4 style="font-size: 1.6rem; color: #27ae60; animation: fadeIn 3s;">
+                            STEP 1: ERS WEBSITE
+                        </h4>
+                        <p style="color: #000;">Visit the website: <a href="https://www.ers.tup.edu.ph/aims/applicants" target="_blank" style="color: #333; transition: color 0.3s ease;" onmouseover="this.style.color='#c0392b'" onmouseout="this.style.color='#e74c3c'">
+                            www.ers.tup.edu.ph/aims/applicants</a>
+                        </p>
+                        
+                      
+                        <h5 style="font-size: 1.4rem; color: #8e44ad;">
+                            A. Fill up the details:
+                        </h5>
+                        <ul style="font-size: 1.1rem; color: #333;">
+                            <li>Name: Dela Cruz</li>
+                            <li>First Name: Juan</li>
+                            <li>Middle Name: (Put NA if not applicable)</li>
+                            <li>Birthdate: (set your mm-dd-yyyy)</li>
+                            <li>Campus: Taguig</li>
+                            <li>Department: College</li>
+                        </ul>
+        
+                        <h5 style="font-size: 1.4rem; color: #8e44ad;">
+                            B. Complete STEPS 1-4:
+                        </h5>
+                        <ul style="font-size: 1.1rem; color: #333;">
+                            <li>Complete all required fields. If not applicable, put NA.</li>
+                            <li>Upload a picture. Rename your picture using your surname (e.g., Delacruz.jpg) and follow the guidelines carefully.</li>
+                        </ul>
+        
+                        <h5 style="font-size: 1.4rem; color: #8e44ad;">
+                            C. Download Form:
+                        </h5>
+                        <ul style="font-size: 1.1rem; color: #333;">
+                            <li>Download your Form A1 from ERS.</li>
+                            <li>Ensure your photo is formal.</li>
+                            <li>Get the Official Applicant ID for TUPTOAA purposes. DO NOT change your password yet.</li>
+                        </ul>
+        
+                        <p><strong>Additional Information:</strong></p>
+                        <p>Please check your Official Applicant ID carefully. Do not change your password yet.</p>
+        
+                        <h4 style="font-size: 1.6rem; color: #27ae60; animation: fadeIn 4s;">
+                            STEP 2: TUPTOAA
+                        </h4>
+                        <p>Complete the TUPTOAA form via Google Form - <a href="https://docs.google.com/forms/d/e/1FAIpQLScVNslOF2LiS4Org6b9oD6Zw5LJxmQAvCVd4IJ8d93H1ULVgQ/viewform" target="_blank" style="color: #333;">Click here</a></p>
+                        <p>Provide the necessary details. Any false information is subject to disqualification.</p>
+        
+                        <h4 style="font-size: 1.6rem; color: #27ae60; animation: fadeIn 5s;">
+                            STEP 3: SUBMIT THE REQUIREMENTS ON-SITE
+                        </h4>
+                        <p>Print the application form (TUP Form 1A) and the completed TUPTOAA acknowledgment (First page ONLY) from your personal email.</p>
+                        <p>Attach the following documents:</p>
+                        <ul style="font-size: 1.1rem; color: #333;">
+                            <li>For SHS applicants: Photocopy of Grade 11 and Grade 12 Card (Updated)</li>
+                            <li>For Transferees: Copy of Transcript of Records or True Copy of Grades from the last school attended</li>
+                        </ul>
+                        <p>Submit the above documents to the Registration and Admission Office at TUPT-Taguig, from <strong>FEBRUARY 5, 2024, to MAY 24, 2024</strong>, or until all slots are filled.</p>
+                        <p><strong>Important Note:</strong> Incomplete requirements will not be entertained.</p>
+        
+                        <div class="alert alert-warning text-center mt-4" style="background-color: #f39c12; color: #fff; font-size: 1.2rem; padding: 15px; border-radius: 5px;">
+                            <strong>Don't forget to submit your requirements within the deadline!</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </main>
+        
+         <main style="margin-top: 1px; margin-bottom: 150px;">
+            <div class="container">
+                <!-- Box for the questions and answers -->
+                <div class="content-section" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <h2 style="font-size: 2rem; color: #e74c3c; margin-bottom: 20px;">Paano makapasok sa TUP-Taguig?</h2>
+                    <p style="font-size: 1.1rem; color: #34495e;">Sa mga nais makapasok at makapag-aral sa TUP-Taguig, Ang TUP Taguig ay may entrance exam kung saan sinusukat ang kakayahan ng aplikante kung ito ay karapat-dapat sa napiling kurso. Magpasa ng mga dokumentong kailangan (Tignan ito).</p>
+                    
+                    <p style="font-size: 1.1rem; color: #34495e;">Ang pagtanggap ng aplikante ay sa pagsisimula ng taon ng paaralan (every School-Year) lamang.</p>
+        
+                    <h3 style="font-size: 1.6rem; color: #e74c3c;">Kailan magbubukas ang TUP-Taguig sa Admission ngayong School-Year?</h3>
+                    <p style="font-size: 1.1rem; color: #34495e;">Ang TUP Taguig ay tumatanggap na ngayon ng mga aplikante para sa SY 2024-2025. Ang pagpapasa ng mga dokumento ay On-Site sa office ng Registration and Admission sa TUP-Taguig mula Pebrero 5, 2024 - Mayo 24, 2024 nang 9:00 AM - 4:00 PM, o hanggang lahat ng kurso ay mapuno.</p>
+        
+                    <h3 style="font-size: 1.6rem; color: #e74c3c;">Maari bang magtransfer ang studyante sa TUP-Taguig?</h3>
+                    <p style="font-size: 1.1rem; color: #34495e;">Ang TUP Taguig ay may polisiya para sa mga aplikante na mayroong college background (up to 2nd Year College). Kung ang aplikante ay walang bagsak sa dating pinasukang eskwelahan (University/College) at nakapagtapos ng SHS, ito ay maaaring lumipat sa nasabing unibersidad. Kung hindi man, ito ay inaabisuhang humanap ng iba pang unibersidad o kolehiyong papasukan.</p>
+        
+                    <p style="font-size: 1.1rem; color: #34495e;">Maari lamang na magpakita ng patunay (Transcript of Records) na ikaw ay walang bagsak sa naturang eskwelahan na pinasukan. May tatlong kursong programa ang maaring pasukan:</p>
+                    <ul style="font-size: 1.1rem; color: #34495e;">
+                        <li>BET major in Automotive Technology</li>
+                        <li>BET major in Dies and Moulds Technology</li>
+                        <li>BET Major in Heating, Ventilation, and Airconditioning/Refrigeration Technology</li>
+                    </ul>
+        
+                    <h3 style="font-size: 1.6rem; color: #e74c3c;">May Tuition/ Miscellaneous Fees bang binabayaran sa TUP-Taguig at magkano?</h3>
+                    <p style="font-size: 1.1rem; color: #34495e;">Ang Tuition/Miscellaneous Fees sa TUP-Taguig ay subsidized ng gobyerno through RA 10931, o kilala bilang "Universal Access to Quality Tertiary Education Act." Ang batas na ito ay nagtataguyod ng unibersal na pag-access sa de-kalidad na edukasyong tersiyaryo sa pamamagitan ng pagbibigay ng libreng matrikula at iba pang bayad sa paaralan sa mga Unibersidad at Kolehiyo ng Estado, Lokal na Unibersidad at Kolehiyo, at mga Institusyong Teknikal-Vokasyonal na Pinatatakbo ng Estado, pagtatatag ng Tertiary Education Subsidy at Student Loan Program, pagpapalakas ng Unified Student Financial Assistance System para sa Tertiary Education, at paglalaan ng pondo samakatuwid,” gaya ng nakasaad sa pamagat ng Batas.</p>
+                </div>
+            </div>
+        </main>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#footer" class="logo">
+            <img src="./assets/images/tup-logo.png" width="162" height="50" alt="TUP-TAGUIG logo">
+          </a>
+
+          <p class="footer-brand-text">
+            The Vision of TUP Taguig is to provide quality education that fosters innovation, creativity, and academic excellence, empowering students to contribute effectively to society and the global community.
+        </p>
+        
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">G25P+828, Taguig, 1630 Metro Manila</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@tuptauig.com" class="footer-link">tuptaguig@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+        
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#footer" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="https://ers.tup.edu.ph/aims/students/" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="https://www.tupt.edu.ph/" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/tuptaguigofficial" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/school/technological-university-of-the-philippines/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/explore/locations/269052856/tup-taguig-campus/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/tuptaguig?lang=en" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://m.youtube.com/hashtag/tuptaguig" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">Rean Joy Cicat</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
